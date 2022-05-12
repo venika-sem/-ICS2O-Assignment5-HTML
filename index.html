@@ -28,31 +28,24 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <!-- First integer -->
+        <h3>Enter integer</h3>
+        <!-- Numeric Textfield with Floating Label -->
         <form action="#">
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="number" step="1" pattern="-?[0-9]*(\.[0-9]+)?" id="first-integer">
-            <label class="mdl-textfield__label" for="first-integer">Enter the first integer:</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <!-- Second integer -->
-        <form action="#">
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="number" step="1" pattern="-?[0-9]*(\.[0-9]+)?" id="second-integer">
-            <label class="mdl-textfield__label" for="second-integer">Enter the second integer:</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="number-value" id="number-value">
+            <label class="mdl-textfield__label" for="number-value">Number...</label>
+            <span class="mdl-textfield__error">This input is not allowed.</span>
           </div>
         </form>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="multiplyBy()">
-          Multiply Them!
+          onclick="calculate()">
+          Calculate
         </button>
         <!-- basic text -->
         <p></p>
-        <div id="answer"></div>
+        <div id="result"></div>
       </main>
     </div>
   </body>
